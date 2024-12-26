@@ -23,7 +23,7 @@ export default function NavigationBar() {
         bg-green
         w-full 
         p-4 
-        z-1000
+        z-50
         text-charcoal
       ">
       <Tab.Group>

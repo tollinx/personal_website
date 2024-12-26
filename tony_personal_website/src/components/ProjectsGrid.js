@@ -25,32 +25,25 @@ const ProjectsGrid = () => {
     },
     {
       id: 3,
-      title: "Q&A Platform",
-      description: "I built an end to end Q&A platform. Has an authentication, backend APIs, ",
-      image: "https://via.placeholder.com/150",
-    },
-    {
-      id: 4,
-      title: "",
-      description: "",
-      image: "https://via.placeholder.com/150",
-      link: "https://www.project2.com" 
-    },
-    {
-      id: 5,
       title: "Roflex",
-      description: "Developed 5 new React components for Roflex's frontend.",
+      description: "Helping physical therapists and recovering athletes.",
       image: roflex,
       img_link: "https://bpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/c/4989/files/2021/04/BME_Zeming-Kuang-Tony-Lin-Raymond-Xu-Nicole-Ding.jpg", 
       link: "https://bpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/c/4989/files/2021/04/BME_Zeming-Kuang-Tony-Lin-Raymond-Xu-Nicole-Ding.jpg"
     },
     {
-      id: 6,
+      id: 4,
       title: "CampAbilities",
-      description: "Designed UI/UX web interface",
+      description: "Helping visually impaired children participate in running activities with Bluetooth beacons",
       image: campAbilities,
       img_link: "https://bpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/c/4989/files/2021/04/BME_Nathaniel-Jamison-Tony-Li-Nicole-Ding-Christian-Jay-Concepcion-Nicole-Windram.jpg", 
       link: "https://www.campabilities.org/"
+    },
+    {
+      id: 5,
+      title: "Q&A Platform",
+      description: "I built an end to end Q&A platform. Has an authentication, backend APIs, ",
+      image: "https://via.placeholder.com/150",
     },
   ];
 
@@ -62,7 +55,7 @@ const ProjectsGrid = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-white p-6 shadow-lg rounded-lg hover:shadow-4xl transition animate-fadeIn"
+            className="bg-white p-6 mb-6 shadow-lg rounded-lg hover:shadow-4xl transition transform hover:scale-105 animate-fadeIn"
           >
             <h3 className="text-4xl text-charcoal font-bold">{project.title}</h3>
 
