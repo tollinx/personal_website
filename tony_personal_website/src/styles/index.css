@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-dark: #004d4d;
+}
+
+
+/* // Component	Color Usage
+// Navbar/Header	Deep Teal
+// Main Section Background	Deep Teal
+// Buttons (Primary)	Deep Teal
+// Buttons (Secondary)	Soft Green
+// Links	Soft Green
+// Section Dividers/Lines	Soft Green
+// Content Background	Warm Beige
+// Cards/Content Panels	Warm Beige
+// Body Text	Rich Charcoal
+// Headings/Subheadings	Rich Charcoal
+// Footer Background	Rich Charcoal
+// Call-to-Action Buttons	Golden Yellow
+// Hover Effects	Golden Yellow
+// Icons/Badges	Golden Yellow
+// Modal/Pop-up Background	Soft White
+// Text Highlights	Warm Coral
+// Secondary Buttons	Warm Coral */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #008080, #006666, #004d4d);
+  background-size: cover;
+}
+
+
+/* For Tailwind CSS, enable dark mode */
+@media (prefers-color-scheme: dark) {
+  /* Add any global dark mode styles */
+  body {
+    background-color: #1a202c;
+    color: white;
+  }
+}
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark {
+  background-color: #1a202c; /* Dark background */
+  color: white; /* Light text */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
