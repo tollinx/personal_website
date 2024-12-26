@@ -35,7 +35,7 @@ export default function NavigationBar() {
               href={categories[category]} 
               className={({ selected }) =>
                 classNames(
-                  'px-4 py-2 text-xl font-medium rounded-md z-1000',
+                  'px-4 py-2 text-m font-medium rounded-md z-1000',
                   'focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800',
                   selected
                     ? 'bg-white text-yellow shadow'

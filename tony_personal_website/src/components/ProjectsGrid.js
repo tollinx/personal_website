@@ -20,7 +20,7 @@ const ProjectsGrid = () => {
         Building a way to make medical assistants' lives easier with a central monitoring system for checking on patient's vitals. I start speaking at 1:26!
       `,
       video: "https://www.bme.cuhk.edu.hk/emedic/video/gp19.mp4",
-      image: pfas_sources,
+      // image: ,
       link: "https://www.bme.cuhk.edu.hk/emedic/video/gp19.mp4"
     },
     {
@@ -57,40 +57,41 @@ const ProjectsGrid = () => {
   return (
     <section id="projects" className="bg-beige dark:bg-teal py-10 px-10">
     <div className="container mx-auto">
-      <h2 className="text-3xl font-bold text-charcoal dark:text-white text-left mb-8">My Projects</h2>
+      <h2 className="text-4xl font-bold text-charcoal dark:text-white text-left mb-8">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transition animate-fadeIn"
+            className="bg-white p-6 shadow-lg rounded-lg hover:shadow-4xl transition animate-fadeIn"
           >
-            <h3 className="text-xl font-bold">{project.title}</h3>
-            <p className="text-charcoal-600 mb-4">{project.description}</p>
+            <h3 className="text-4xl text-charcoal font-bold">{project.title}</h3>
+
+            <p className="text-charcoal text-xl mb-4">{project.description}</p>
             
-            <div className="mb-4">
-              <a href={project.img_link}>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-auto rounded-lg mb-2"
-                />
-              </a>
-              <iframe
-                src={project.video}
-                title={project.title}
-                className="w-full h-48 rounded-lg"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            <a href={project.img_link}>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-auto rounded-lg mb-2"
+              />
+            </a>
+
+            <iframe
+              src={project.video}
+              title={project.title}
+              className="w-full h-96 rounded-lg"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            >
+            </iframe>
             
             <a
               href={project.link}
-              className="text-blue-500 hover:text-blue-700"
+              className="text-green text-xl hover:text-yellow"
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Project
+              More details!
             </a>
           </div>
         ))}

@@ -1,6 +1,7 @@
 import React from "react";
 import am_logo from "./../assets/AM_logo.webp";
 import deloitte_logo from "./../assets/deloitte_logo.avif";
+import pfas_sources from './../assets/pfas_sources.png';
 
 const ExperienceGrid = () => {
   const experiences = [
@@ -26,7 +27,7 @@ const ExperienceGrid = () => {
       description: `Cancer Research. 
                     PFAS is a common carcinogen found our everyday items, one of Allied Microbiota's innovative goals
                     is bioprospecting bacterial genes that can degrade PFAS!
-                    With financial power of 100k Google Cloud Credits, 
+                    With the power of 100k Google Cloud Credits, 
                     I used various bioinformatic libraries, NCBI's genbank, and code from previous researchers 
                     to cleanse 3 TB of bacterial genes and build a machine learning model to find these cancer destroying strains!
                     `,
