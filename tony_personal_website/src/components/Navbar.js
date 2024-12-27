@@ -47,7 +47,7 @@ export default function NavigationBar() {
                   'px-4 py-2 text-m font-medium rounded-md z-1000',
                   'focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800',
                   selected
-                    ? 'bg-white text-yellow shadow'
+                    ? 'bg-white text-charcoal shadow'
                     : 'text-white hover:bg-white/[0.2]',
                       'transition-transform duration-200 ease-in-out transform hover:scale-150'
                 )
