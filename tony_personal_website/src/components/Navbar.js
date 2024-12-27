@@ -1,31 +1,25 @@
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
-import ToggleMood from './ToggleMood'
 import { Link } from 'react-router-dom'
+import ToggleMood from './ToggleMood'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-// Scroll to section handler
-const scrollToSection = (ref) => {
-  ref.current?.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
-  })
-}
-
 export default function NavigationBar() {
-  const [categories] = useState({
-    Home: <Link to="/">Home</Link>,
-    Portfolio: '/portfolio',
-    About: '/about',
-    Services: '/resume',
-    Contact: '/contact',
-  })
+  // Instead of an object, you could also use an array of route objects
+  const [routes] = useState([
+    { name: 'Home', path: '/' },
+    { name: 'Portfolio', path: '/portfolio' },
+    { name: 'Resume', path: '/resume' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' },
+  ])
 
   return (
-    <div className="
+    <div
+      className="
         fixed
         top-0 
         left-0 
@@ -34,32 +28,35 @@ export default function NavigationBar() {
         p-4 
         z-50
         text-charcoal
-      ">
+      "
+    >
       <Tab.Group>
         <Tab.List className="flex justify-center space-x-12">
-          {Object.keys(categories).map((category) => (
+          {routes.map((route) => (
             <Tab
-              key={category}
-              as="a"
-              href={categories[category]} 
+              key={route.name}
+              as={Link}      // IMPORTANT: Make Tab render as a Link
+              to={route.path} // Pass the path as the 'to' prop
               className={({ selected }) =>
                 classNames(
-                  'px-4 py-2 text-m font-medium rounded-md z-1000',
-                  'focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800',
+                  'px-4 py-2 sm:text-xxs md:text-base lg:text-xl font-medium rounded-md z-50',
+                  'focus:outline-none',
                   selected
                     ? 'bg-white text-charcoal shadow'
-                    : 'text-white hover:bg-white/[0.2]',
-                      'transition-transform duration-200 ease-in-out transform hover:scale-150'
+                    : 'text-white hover:bg-white',
+                  'transition-transform duration-200 ease-in-out transform hover:scale-120'
                 )
               }
             >
-              {category}
+              {route.name}
             </Tab>
           ))}
         </Tab.List>
       </Tab.Group>
+
+      {/* Mood Toggle or any extra items on the right */}
       <div className="flex items-center space-x-6">
-        <ToggleMood/>
+        <ToggleMood />
       </div>
     </div>
   )

@@ -38,39 +38,53 @@ const ExperienceGrid = () => {
   ];
 
   return (
-    <section id="experiences" className="">
-    <div className="container mx-auto">
-      <h2 className="text-sm md:text-lg lg:text-4xl text-charcoal dark:text-white font-bold text-left mb-8">Places I've worked at</h2>
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
+    <section 
+    className="py-12 bg-beige dark:bg-teal"
+    >
+      <div 
+      className="container mx-auto px-4 space-y-48"
+      >
         {experiences.map((experience) => (
           <div
             key={experience.id}
-            className="bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transition animate-fadeIn"
+            className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center"
           >
-            <a
-              href={experience.link}
-              className="text-blue-500 hover:text-teal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3 className="text-4xl font-bold">{experience.company}</h3>
-            </a>
-            <h3 className="text-xl font-bold">{experience.title}</h3>
-            <p className="text-gray-600 mb-4">{experience.date}</p>
-            <p className="text-gray-600 mb-4">{experience.description}</p>
-            
-            <div className="mb-4">
+            {/* Image Section */}
+            <div>
               <img
                 src={experience.image}
                 alt={experience.title}
-                className="w-full h-auto rounded-lg mb-2"
               />
+            </div>
+
+            
+
+            {/* Case Number and Text Section */}
+            <div className="sm:col-span-1 sm:col-span-1 lg:col-span-2 space-y-4">
+            <p className="animate-ping absolute inline sm:xs m:s lg:text-m uppercase text-charcoal dark:text-beige">
+                ●
+              </p>
+              <p className="inline p-8 sm:xs m:s lg:text-m uppercase text-charcoal dark:text-beige">
+                {experience.company}
+              </p>
+              <h2 className="sm:s m:l lg:text-2xl font-bold text-charcoal dark:text-beige">
+                {experience.title}
+              </h2>
+              <p className="sm:xs m:l lg:text-2xl text-charcoal dark:text-beige">
+                {experience.description}
+              </p>
+              <a
+                href={experience.link}
+                className="inline-block px-6 py-2 sm:xs m:l lg:text-2xl font-medium text-white bg-green rounded-lg shadow hover:bg-yellow transition"
+              >
+                More about this company →
+              </a>
             </div>
           </div>
         ))}
       </div>
-    </div>
     </section>
+
   );
 };
 

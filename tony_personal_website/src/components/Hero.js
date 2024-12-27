@@ -3,7 +3,8 @@ import AboutMeButton from "./AboutMeButton";
 
 const Hero = () => {
   return (
-    <section className="h-screen 
+    <section className="
+      min-h-screen 
       bg-beige
       dark:bg-teal
       text-charcoal 
@@ -12,16 +13,16 @@ const Hero = () => {
       animate-slideFadeIn
       ">
         
-      <h1 className="text-4xl font-bold text-center">
+      <h1 className="sm:text-xs md:text-2xl lg:text-4xl font-bold text-center">
         The Products and Works
       </h1>
-      <h1 className="text-4xl md:text-6xl font-bold text-center m-8">
+      <h1 className="sm:text-xs md:text-2xl lg:text-4xl font-bold text-center">
         of Tony Lin
       </h1>
-      <p className="mt-4 text-lg md:text-xl text-center max-w-2xl">
+      <p className="mt-4 sm:text-xs m:text-l lg:text-xl text-center sm:max-w-lg md:max-w-2xl max-w-2xl">
         My mission is to design and develop solutions for your business needs.
       </p>
-      <div className="mt-8 space-x-4">
+      <div className="mt-8 flex flex-col sm:flex-row space-y-4 space-x-4 sm:space-y-0 sm:space-x-4">
         <a
           href="https://www.linkedin.com/in/tony-lin1/"
           className="

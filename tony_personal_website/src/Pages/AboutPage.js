@@ -2,93 +2,98 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <section className="w-full h-screen flex flex-col text-charcoal dark:text-white"> 
-    <div id="about-me" className="text-center">
-        <h2 className="text-4xl font-bold mb-4">About Me</h2>
-    </div>
-    <div className="text-2xl w-half justify-left text-charcoal dark:text-white px-64">
-        <p className="text-charcoal dark:text-white">
-        Hi there! I appreciate you making it here.
-        <br />
-        This is a summary of my tech journey dating as far back as I can remember!
-        <br />
-        <span className="font-bold">2025</span><br />
-            Happy New Years!
-        <br /><span className="font-bold">2024</span><br />
-            I'd achieved a Computer Science Bachelor's from Stony Brook in a little over 2 years. 
-            Traveled South Korea and Japan!
-            Started working at Deloitte in July ever since and getting experience in cloud, Gen AI, and backend development.
-        <br /><span className="font-bold">2023</span><br />
-            Overloaded on credits but I was learning more than I ever had in my life! 
-            Took classes on Data structures, web design, and linear algebra!
-            I became a frontend lead for Cicaida where I did my best to onboard 5 new developers and migrate the app to desktop.
-            I was a summer scholar at Deloitte, it was my first internship with a big company and I became interested in developing software for client solutions.
-        <br /><span className="font-bold">2022</span><br />
-            I officially began my coding journey as I decided to begin the switch to Computer Science
-            I did a lot of mobile development and React frontend development with no coding background
-            Presented to an international 
-        <br /><span className="font-bold">2021</span><br />
-            I was helping out a lot with UI/UX designs for wrist wearable device projects. 
-            Professor Chan and her team of undergraduate students embarked on a new project called Cicaida!
-            EMedic Global Clinical Technology Competition in Hong Kong
-            I was enjoying UI UX design, but I wanted to go deeper into my implementation!
-            I remember spending 2 weeks on a crash course to learn enough HTML, CSS, JavaScript, and React to develop a frontend
-        <br /><span className="font-bold">2020</span><br />
-            Enrolled in Stony Brook University! Started out as a biomedical engineering major. 
-            I started out doing research with Professor Chan on an existing applications like CampAbilities and Roflex!
-            I got involved building wireframes and designing user flows. 
-            <br />
-            <a
-            href="https://bpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/c/4989/files/2021/04/BME_Zeming-Kuang-Tony-Lin-Raymond-Xu-Nicole-Ding.jpg"
-            className="text-blue-500 hover:text-blue-700"
-            target="_blank"
-            rel="noopener noreferrer"
-            />
-            <a
-            href="https://bpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/c/4989/files/2021/04/BME_Nathaniel-Jamison-Tony-Li-Nicole-Ding-Christian-Jay-Concepcion-Nicole-Windram.jpg"
-            className="text-blue-500 hover:text-blue-700"
-            target="_blank"
-            rel="noopener noreferrer"
-            />
-            <br />
+    <section
+      className="
+        w-full
+        h-full
+        flex
+        flex-col
+        items-center
+        bg-beige
+        dark:bg-teal
+        text-charcoal
+        dark:text-white
+        px-4
+        py-12
+        md:px-8
+        lg:px-16
+        animate-fadeIn
+      "
+    >
+      {/* About Me Header */}
+      <div id="about-me" className="text-center mb-8 mt-10">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+          About Me
+        </h2>
+      </div>
+
+      {/* Timeline / Journey Section */}
+      <div
+        className="
+          w-full
+          max-w-3xl
+          mx-auto
+          space-y-6
+          text-base
+          md:text-lg
+          lg:text-xl
+          leading-relaxed
+        "
+      >
+        <p>
+          Hi there! I appreciate you making it here.
+          This is a summary of my tech journey dating as far back as I can remember!
         </p>
-    </div>
-    <div className="px-64 text-left">
-    {/* Header */}
-    <h1 className="text-4xl font-bold mb-8">Want to build something together?</h1>
 
-    {/* Main Contact Section */}
-    <div className="grid grid-cols-1 gap-12">
-        {/* Email Section */}
+        {/* 2025 */}
         <div>
-        <h2 className="text-2xl font-bold">Email</h2>
-        <p className="text-lg">tonylin49ine@gmail.com</p>
+          <span className="font-bold">2025:</span> <br />
+          Happy New Years!
         </div>
 
-        {/* LinkedIn Section */}
+        {/* 2024 */}
         <div>
-        <h2 className="text-2xl font-bold">LinkedIn</h2>
-        <a
-            href="https://www.linkedin.com/in/tony-lin1/"
-            className="text-green-400 hover:text-green-500"
-        >
-            https://www.linkedin.com/in/tony-lin1/
-        </a>
+          <span className="font-bold">2024:</span> <br />
+          I earned a Computer Science Bachelor’s from Stony Brook in just over 2 years,
+          traveled to South Korea and Japan, and started working at Deloitte. 
+          I’ve been gaining experience in cloud, Gen AI, and backend development.
         </div>
 
-        {/* GitHub Section */}
+        {/* 2023 */}
         <div>
-        <h2 className="text-2xl font-bold">GitHub</h2>
-        <a
-            href="https://github.com/tollinx"
-            className="text-green-400 hover:text-green-500"
-        >
-            https://github.com/tollinx
-        </a>
+          <span className="font-bold">2023:</span> <br />
+          I overloaded on credits and learned more than ever—Data Structures, 
+          Web Design, Linear Algebra, and more! I became a frontend lead for Cicaida, 
+          onboarding 5 new developers and migrating the app to desktop. 
+          I also had my first big-company internship as a Summer Scholar at Deloitte.
         </div>
-    </div>
-    </div>
 
+        {/* 2022 */}
+        <div>
+          <span className="font-bold">2022:</span> <br />
+          I officially began my coding journey, switching to Computer Science. 
+          I did a lot of mobile development and React front-end with no prior coding experience, 
+          even presenting to an international audience!
+        </div>
+
+        {/* 2021 */}
+        <div>
+          <span className="font-bold">2021:</span> <br />
+          I helped with UI/UX design for wrist-wearable device projects. 
+          Professor Chan led a team of undergraduates on a new project called Cicaida, 
+          which competed in the EMedic Global Clinical Technology Competition in Hong Kong. 
+          I spent 2 weeks learning enough HTML, CSS, JavaScript, and React to build a frontend!
+        </div>
+
+        {/* 2020 */}
+        <div>
+          <span className="font-bold">2020:</span> <br />
+          I enrolled at Stony Brook University as a Biomedical Engineering major. 
+          I conducted research with Professor Chan, working on CampAbilities and Roflex, 
+          focusing on wireframes and user flows.
+          <br />
+        </div>
+      </div>
     </section>
   );
 };
