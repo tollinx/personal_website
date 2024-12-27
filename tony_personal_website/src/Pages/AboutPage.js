@@ -8,7 +8,7 @@ const AboutPage = () => {
     </div>
     <div className="text-2xl w-half justify-left text-charcoal dark:text-white px-64">
         <p className="text-charcoal dark:text-white">
-        Hey! Thanks for making it here.
+        Hi there! I appreciate you making it here.
         <br />
         This is a summary of my tech journey dating as far back as I can remember!
         <br />

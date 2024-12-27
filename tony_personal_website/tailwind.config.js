@@ -8,10 +8,55 @@ module.exports = {
         fadeIn: 'fadeIn 3s ease-in-out',
       },
       keyframes: {
+        wavy: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '25%': { transform: 'translateY(-5px)' },
+          '50%': { transform: 'translateY(5px)' },
+          '75%': { transform: 'translateY(-5px)' },
+        },
         fadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
         },
+        ripple: {
+          '0%': { transform: 'scale(1)', opacity: 1 },
+          '50%': { transform: 'scale(1.1)', opacity: 0.5 },
+          '100%': { transform: 'scale(1)', opacity: 1 },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        zigzag: {
+          '0%': { transform: 'translateX(0)' },
+          '25%': { transform: 'translateX(-5px) rotate(-5deg)' },
+          '50%': { transform: 'translateX(5px) rotate(5deg)' },
+          '75%': { transform: 'translateX(-5px) rotate(-5deg)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        gradientWave: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+        rippleFade: {
+          '0%': {
+            transform: 'translateY(-50px)',  // Move 50px up
+            opacity: 0,  // Start invisible
+          },
+          '100%': {
+            transform: 'translateY(0)',  // Move to normal position
+            opacity: 1,  // Fade in to full visibility
+          },
+        }
+      },
+      animation: {
+        wavy: 'wavy 2s ease-in-out infinite',
+        ripple: 'ripple 1s ease infinite',
+        float: 'float 3s ease-in-out infinite',
+        gradientWave: 'gradientWave 1s ease infinite',
+        zigzag: 'zigzag 0.5s ease-in-out',
+        slideFadeIn: 'rippleFade 1.5s ease-out forwards', 
       },
       fontSize: {
         'xxs': '0.625rem',

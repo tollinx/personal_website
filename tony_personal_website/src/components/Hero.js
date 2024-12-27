@@ -8,13 +8,15 @@ const Hero = () => {
       dark:bg-teal
       text-charcoal 
       dark:text-white 
-      flex flex-col justify-center items-center">
+      flex flex-col justify-center items-center
+      animate-slideFadeIn
+      ">
         
-      <h1 className="text-4xl md:text-6xl font-bold text-center">
-        A problem solver, engineer, and consultant.
+      <h1 className="text-4xl font-bold text-center">
+        The Products and Works
       </h1>
       <h1 className="text-4xl md:text-6xl font-bold text-center m-8">
-        Tony Lin
+        of Tony Lin
       </h1>
       <p className="mt-4 text-lg md:text-xl text-center max-w-2xl">
         My mission is to design and develop solutions for your business needs.
@@ -31,7 +33,7 @@ const Hero = () => {
           hover:bg-yellow
           transition-all"
         >
-          Message me over LinkedIn
+          DM me on LinkedIn
         </a>
         <a
           href="mailto:tonylin49ine@example.com"
@@ -44,7 +46,7 @@ const Hero = () => {
             hover:bg-yellow
             transition-all"
         >
-          Send me an Email
+          Or send an email?
         </a>
       </div>
       <AboutMeButton />

@@ -5,23 +5,22 @@ import CareerPage from './Pages/CareerPage';
 import ProjectPage from './Pages/ProjectPage';
 import AboutMe from './Pages/AboutPage';
 import "./styles/index.css"
-import { useEffect } from 'react';
 
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="
-    bg-beige
-    dark:bg-teal">
-      <MainLayout>
-        <Homepage/>
-        {/* <CareerPage/>
-        <ProjectPage/>
-        <PersonalPage/> */}
-        <AboutMe/>
-      </MainLayout>
-    </div>
+        <div className="
+        bg-beige
+        dark:bg-teal">
+          <MainLayout>
+          <Homepage/>
+          {/* <CareerPage/>
+          <ProjectPage/>
+          <PersonalPage/> */}
+          <AboutMe/>
+          </MainLayout>
+        </div>
   );
 }
 

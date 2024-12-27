@@ -1,14 +1,23 @@
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
 import ToggleMood from './ToggleMood'
+import { Link } from 'react-router-dom'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+// Scroll to section handler
+const scrollToSection = (ref) => {
+  ref.current?.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  })
+}
+
 export default function NavigationBar() {
   const [categories] = useState({
-    Home: '/',
+    Home: <Link to="/">Home</Link>,
     Portfolio: '/portfolio',
     About: '/about',
     Services: '/resume',
