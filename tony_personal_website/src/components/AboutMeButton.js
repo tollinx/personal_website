@@ -9,7 +9,17 @@ export default function AboutMeButton() {
                 const aboutMeSection = document.getElementById('about-me');
                 aboutMeSection?.scrollIntoView({ behavior: 'smooth' });
               }}
-                className="px-6 py-3 bg-green text-white font-semibold rounded-full hover:bg-yellow transition-all"
+                className="px-6 py-3 bg-green 
+                            /* Medium */
+                            px-2
+                            py-2
+                            md:text-base
+
+                            /* Large */
+                            px-2
+                            py-2
+                            lg:text-xl
+                            text-white font-semibold rounded-full hover:bg-yellow transition-all"
               >
               About Me
             </button>

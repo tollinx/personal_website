@@ -50,7 +50,7 @@ const ExperienceGrid = () => {
             className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center"
           >
             {/* Image Section */}
-            <div>
+            <div className="">
               <img
                 src={experience.image}
                 alt={experience.title}
@@ -64,7 +64,7 @@ const ExperienceGrid = () => {
             <p className="animate-ping absolute inline sm:xs m:s lg:text-m uppercase text-charcoal dark:text-beige">
                 ●
               </p>
-              <p className="inline p-8 sm:xs m:s lg:text-m uppercase text-charcoal dark:text-beige">
+              <p className="inline p-8 sm:xs sm:text-sm md:text-sm lg:text-base uppercase text-charcoal dark:text-beige">
                 {experience.company}
               </p>
               <h2 className="sm:s m:l lg:text-2xl font-bold text-charcoal dark:text-beige">

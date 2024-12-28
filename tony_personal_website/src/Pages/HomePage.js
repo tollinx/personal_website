@@ -9,9 +9,6 @@ const Homepage = () => {
       < Hero />
       < ExperienceGrid />
       < Certifications />
-
-      {/* < Carousel /> */}
-      < ProjectsGrid />
     </div>
   );
 };
