@@ -33,7 +33,7 @@ const Hero = () => {
         "
       >
         {/* column: Profile image */}
-                <div className="flex justify-center">
+        <div className="flex justify-center">
           <img
             src={profilePic}
             alt="Tony Lin Friendsgiving"

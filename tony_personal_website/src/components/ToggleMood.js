@@ -32,7 +32,7 @@ export default function ToggleMood(){
   return (
     <button
       onClick={toggleMode}
-      className="fixed top-4 right-4 p-3 bg-white dark:bg-white rounded-full shadow-lg transition-all duration-300 hover:scale-105"
+      className="fixed top-4 right-4 sm:top-4 sm:right-4 sm:p-3 md:top-4 md:right-4 md:p-2 rounded-full transition-all duration-300 hover:bg-white"
     >
       {isDarkMode ? (
         <FaMoon className="text-xl transition-all duration-300" />

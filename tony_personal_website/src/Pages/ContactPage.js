@@ -51,7 +51,7 @@ const ContactPage = () => {
             </h2>
             <a
               href="https://www.linkedin.com/in/tony-lin1/"
-              className="text-charcoal hover:text-yellow text-base md:text-lg lg:text-xl text-beige underline"
+              className="text-beige hover:text-yellow text-base md:text-lg lg:text-xl underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -75,7 +75,7 @@ const ContactPage = () => {
             </h2>
             <a
               href="https://github.com/tollinx"
-              className="text-charcoal hover:text-yellow text-base md:text-lg lg:text-xl text-beige underline"
+              className="text-beige hover:text-yellow text-base md:text-lg lg:text-xl underline"
               target="_blank"
               rel="noopener noreferrer"
             >
