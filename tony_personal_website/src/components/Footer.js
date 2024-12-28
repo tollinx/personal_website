@@ -16,7 +16,7 @@ const Footer = () => (
     `}
   >
     <p className="text-xs sm:text-sm md:text-base">
-      © {new Date().getFullYear()} My Website. All rights reserved.
+      © {new Date().getFullYear()} Tony Lin's Website. All rights reserved so be respectful plz.
     </p>
   </footer>
 );
